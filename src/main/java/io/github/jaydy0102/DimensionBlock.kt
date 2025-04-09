@@ -10,7 +10,7 @@ class DimensionBlock : JavaPlugin() {
     }
     override fun onEnable() {
         instance = this
-        logger.info("LifeSteal starting...")
+        logger.info("DimensionBlock starting...")
         Bukkit.getPluginManager().registerEvents(ConnectionListener(), this)
 
         saveDefaultConfig()

@@ -17,7 +17,7 @@ class ConnectionListener : Listener {
         val open1 = ConfigManager.endbanned
         val open2 = ConfigManager.netherbanned
         val loc = player.respawnLocation
-        val spawn = Bukkit.getWorlds().get(0).spawnLocation
+        val spawn = Bukkit.getWorlds()[0].spawnLocation
         if (world.environment == World.Environment.THE_END) {
             if (open1) {
                 if (loc != null) {
